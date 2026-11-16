@@ -1,9 +1,11 @@
-// enter archive button 
+// switch from landing to dash
 const enterbtn = document.getElementById("enterbtn");
-const accesmsg= document.getElementById("accessmsg");
+const homepg = document.querySelector(".homepage");
+const hero = document.querySelector(".hero");
+const dash = document.getElementById("dash");
 
-enterbtn.addEventListener("click", function () {
-    accesmsg.textContent = "ACCESS GRANTED MAN! - INITIALIZING ARCHIVE PLEASE WAIT!....";
-    enterbtn.textContent = "ACCESS APPROVED";
-    enterbtn.disabled = true;
+//open dash
+enterbtn.addEventListener("click",function () {
+    hero.style.display = "none";
+    dash.style.display = "block";
 });
