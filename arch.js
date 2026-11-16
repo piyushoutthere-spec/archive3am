@@ -49,3 +49,33 @@ casecards.forEach(function(card) {
         casemeta.textContent = "CASE" + casenum + "/STATUS: " + record.status;   
     });
 });
+
+// recovered document info
+const documents = [
+    {
+        title: "ORIGINAL INVESTIGATION REPORT",
+        text: "DATE: 14 OCTOBER 1978. An unidentified transmission was recorded at 03:17 AM. The soure could not be traced. All further investigation records were marked for review."
+    },
+    {
+        title: "MISSING PERSONNEL RECORDS",
+        text:"DATE: 22 JUNE 1989. Several personnel records were discovered missing from the central database.No official explanation was provided."
+    },
+    {
+        title:"TRANSMISSION ANALYSIS",
+        text:"DATE:09 FEBRUARY 1991. Recovered audio contained a repeating signal pattern. The transmission ended abruptly before its origin could be identified."
+    }
+];
+
+//open selected document
+const docbtn = document.querySelectorAll(".viewdoc");
+
+docbtn.forEach(function (button) {
+    button.addEventListener("click",function() {
+        const docitem = button.closest(".documentitem");
+        const docnum = docitem.dataset.documents;
+        const selecteddoc = documents[docnum];
+
+        document.getElementById("doctitle").textContent = selecteddoc.title;
+        document.getElementById("doctext").textContent = selecteddoc.text;
+    });
+});
