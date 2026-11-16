@@ -9,3 +9,79 @@ body {
     color:whitesmoke;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/*header layout*/
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:30px 7%;
+}
+
+header h2 {
+    font-size: 22px;
+    letter-spacing:2px;
+}
+
+header h2 span {
+    color:#888;
+}
+
+header p {
+    color:#888;
+    font-family:monospace;
+    font-size:12px;
+}
+
+/*landinf page content*/
+
+.homepage {
+    min-height: calc(100vh-85px);
+    padding:0 7%;
+    display:flex;
+    align-items:center;
+}
+
+.hero {
+    max-width: 750px;
+}
+
+.eye {
+    color: gray;
+    font-family:monospace;
+    font-size:12px;
+    letter-spacing:3px;
+    margin-bottom:25px;
+}
+
+h1{
+    font-size: clamp(50px,7vw,90px);
+    letter-spacing: -4px;
+    line-height: 1;
+}
+
+.desc {
+    color:gray;
+    font-size: 15px;
+    line-height:2;
+    max-width:350px;
+    margin-top:25px;
+}
+
+
+/*Enter archive button*/
+button {
+    margin-top:30px;
+    padding:15px 24px;
+    background:white;
+    color:black;
+    border: 1px solid white;
+    font-family:monospace;
+    font-size:12px;
+    cursor:pointer;
+}
+
+button:hover {
+    background:transparent;
+    color:white;
+}
