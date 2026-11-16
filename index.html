@@ -107,22 +107,38 @@
 
                     <div class="casegrid">
 
-                        <div class="casecard">
+                        <div class="casecard" data-case="001">
                             <p>CASE NO. 001</p>
                             <h3>THE VANISHING SIGNAL</h3>
                             <span>STATUS: UNRESOLVED</span>
                         </div>
 
-                        <div class="casecard">
+                        <div class="casecard" data-case="002">
                             <p>CASE NO. 002</p>
                             <h3>THE EMPTY STATION</h3>
                             <span>STATUS: UNDER REVIEW</span>
                         </div>
 
-                        <div class="casecard">
+                        <div class="casecard" data-case="003">
                             <p>CASE NO. 003</p>
                             <h3>PROJECT BLACKOUT</h3>
                             <span>STATUS: CLASSIFIED</span>
+                        </div>
+                    </div>
+
+                    <!--selected case info-->
+                    <div class="casedetails" id="caseDetails">
+
+                        <p class="eye">CASE INFORMATION</p>
+
+                        <h2 id="casetitle">SELECT A CASE FILE</h2>
+
+                        <p id="casedecs">
+                            Select an investigation above to access its records.
+                        </p>
+
+                        <div class="casemeta" id="caseMeta">
+                            NO CASE SELECTED
                         </div>
                     </div>
                 </section>
