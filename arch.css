@@ -239,3 +239,57 @@ button:hover {
 .dashcontent {
     padding:45px;
 }
+
+/*RECENT CASE FILES*/
+
+.recentcases {
+    margin-top:55px;
+}
+
+.sectionhead {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 25px;
+}
+
+.sectionhead h2 {
+    font-size: 21px;
+    margin-top: 10px;
+}
+
+.sectionhead > span {
+    color: gray;
+    font-family: monospace;
+    font-size: 15px;
+}
+
+.casegrid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:15px;
+}
+
+.casecard {
+    background: #191919;
+    border: 1px solid #303030;
+    padding:22px;
+    min-height:150px;
+}
+
+.casecard p {
+    color:gray;
+    font-family: monospace;
+    font-size:12px;
+}
+
+.casecard h3 {
+    font-size: 15px;
+    margin: 25px 0 15px;
+}
+
+.casecard span {
+    color: gray;
+    font-family: monospace;
+    font-size: 10px;
+}
