@@ -43,7 +43,16 @@ header p {
 }
 
 .hero {
-    max-width: 750px;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    gap:50px;
+}
+
+.herocontent {
+    flex:1;
+    max-width:600px;
 }
 
 .eye {
