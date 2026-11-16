@@ -79,3 +79,5 @@ docbtn.forEach(function (button) {
         document.getElementById("doctext").textContent = selecteddoc.text;
     });
 });
+
+//archive search function
