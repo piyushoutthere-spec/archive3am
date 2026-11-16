@@ -7,5 +7,5 @@ const dash = document.getElementById("dash");
 //open dash
 enterbtn.addEventListener("click",function () {
     hero.style.display = "none";
-    dash.style.display = "block";
+    dash.style.display = "grid";
 });

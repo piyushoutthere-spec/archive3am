@@ -140,7 +140,9 @@ button:hover {
 .dash {
     display:none;
     width:100%;
-    padding:50px 7%;
+    padding:0;
+    min-height: calc(100vh-85px);
+    grid-template-columns: 220px 1fr;
 }
 
 .dashheader h2 {
@@ -181,3 +183,59 @@ button:hover {
     margin-top: 12px;
 }
 
+/*dash sidebar*/
+
+.sidebar {
+    background: #151515;
+    border-right: 1px solid #303030;
+    padding:30px 25px;
+    position: relative;
+}
+
+.sidebar h3 {
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+.sidebar h3 span {
+    color: gray;
+}
+
+.sidebarlabel {
+    color:#666;
+    font-family: monospace;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar nav a {
+    color:#888;
+    text-decoration: none;
+    padding:12px;
+    font-size:14px;
+}
+
+.sidebar nav a:hover, .sidebar nav a.active {
+    background:#252525;
+    color:white;
+}
+
+.sidebarstatus {
+    position: absolute;
+    bottom: 18px;
+    color:gray;
+    font-family: monospace;
+    font-size:12px;
+}
+
+/*dash content*/
+.dashcontent {
+    padding:45px;
+}
