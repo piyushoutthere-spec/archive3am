@@ -90,7 +90,7 @@ searchinput.addEventListener("input",function () {
 
     //search through case cards and document records
     const searchableitmes = document.querySelectorAll(
-        ".casecard, .documentitem"
+        ".casecard, .documentitem, .eviditem"
     );
 
     let found = 0;
@@ -119,4 +119,51 @@ lockeditems.forEach(function(item) {
     item.addEventListener("click",function() {
         alert("ACCESS DENIED: THIS FILE IS CLASSIFIED.");
     });
+});
+
+// archive terminal
+
+const terminalinput = document.getElementById("terminalinput");
+const terminaloutput = document.getElementById("terminaloutput");
+
+terminalinput.addEventListener("keydown", function(e) {
+    if (e.key === "Enter") {
+        const command = terminalinput.value.trim().toLowerCase();
+
+        if (command === "") return;
+
+        const userline = document.createElement("p");
+        userline.textContent = ">" + command;
+        terminaloutput.appendChild(userline);
+
+        const response = document.createElement("p");
+
+        //process terminal commands
+        if (command === "help") {
+            response.textContent = "COMMANDS: HELP,STATUS,CASES,CLEAR";
+        }
+
+        else if (command === "cases") {
+            response.textContent = "AVAILABLE CASES: 001,002,003";
+        }
+
+        else if (command === "status") {
+            response.textContent = "SYSTEM ONLINE | ALL ARCHIVES CONNECTED";
+        }
+
+        else if (command === "clear") {
+            terminaloutput.innerHTML = "";
+            terminalinput.value = "";
+            return;
+        }
+
+        else {
+            response.textContent = "UNKNOWN COMMAND. TYPE HELP";
+        }
+
+        terminaloutput.appendChild(response);
+        terminalinput.value = "";
+
+        terminaloutput.scrollTop = terminaloutput.scrollHeight;
+    }
 });
