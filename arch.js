@@ -167,3 +167,48 @@ terminalinput.addEventListener("keydown", function(e) {
         terminaloutput.scrollTop = terminaloutput.scrollHeight;
     }
 });
+
+// hidden clues
+const eviditem = document.querySelectorAll(".eviditem");
+
+const clues = [
+    "CLUE 01: A transmission was detected at 03:17 AM.",
+    "CLUE 02: The railway station was abandoned in 1989.",
+    "CLUE 03: PROJECT BLACKOUT was connected to the signal."
+];
+
+let disclues = [];
+
+eviditem.forEach(function(item,index) {
+      // Only the first three evidence images contain clues
+    if (index >= 3) return;
+
+    item.style.cursor = "pointer";
+
+    item.addEventListener("click", function() {
+
+        if (disclues.includes(index)) return;
+
+        disclues.push(index);
+
+        const count = disclues.length;
+        const percentage = (count / 3) * 100;
+
+        document.getElementById("cluecount").textContent =
+            "CLUES DISCOVERED: " + count + " / 3";
+
+        document.getElementById("progressbar").style.width =
+            percentage + "%";
+
+        document.getElementById("cluemessage").textContent =
+            clues[index];
+
+        // unlock final discovery
+        if (count === 3) {
+            document.getElementById("finaldis").style.display = 
+            "block";
+
+            document.getElementById("cluemsg").textContent = "ALL AVAILABLE CLUES HAVE BEEN RECOVERED.";
+        }
+    });    
+});
