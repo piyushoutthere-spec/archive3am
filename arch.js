@@ -111,3 +111,12 @@ searchinput.addEventListener("input",function () {
         ? "SEARCH ALL RECOVERED RECORDS"
         :  found + "RECORDS(S) FOUND";
 });
+
+//resticted document access
+const lockeditems = document.querySelectorAll(".lockeditem");
+
+lockeditems.forEach(function(item) {
+    item.addEventListener("click",function() {
+        alert("ACCESS DENIED: THIS FILE IS CLASSIFIED.");
+    });
+});

@@ -457,3 +457,33 @@ button:hover {
     font-size:12px;
     margin-top:15px;
 }
+
+/*resticted doc*/
+.lockeddoc {
+    margin-top: 30px;
+}
+
+.lockeddoc h3 {
+    color:#888;
+    font-size:14px;
+    letter-spacing: 2px;
+    margin-bottom:15px;
+}
+
+.lockeditem {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px;
+    margin-bottom:10px;
+    background: #151515;
+    border: 1px solid #292929;
+    font-size: 12px;
+    color:gray;
+}
+
+.lockstatus {
+    color:orange;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
