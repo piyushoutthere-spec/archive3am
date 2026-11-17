@@ -36,7 +36,7 @@ header p {
 /*landinf page content*/
 
 .homepage {
-    min-height: calc(100vh-85px);
+    min-height: calc(100vh - 85px);
     padding:0 7%;
     display:flex;
     align-items:center;
@@ -359,7 +359,7 @@ button:hover {
 }
 
 /*document list*/
-.documentsection {
+.docsection {
     margin-top:55px;
 }
 
@@ -409,7 +409,7 @@ button:hover {
     margin: 15px 0;
 }
 
-.document-viewer  p:last-child {
+.docviewer  p:last-child {
     color:#999;
     font-size:14px;
     line-height:1.8;

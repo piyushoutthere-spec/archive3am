@@ -205,10 +205,13 @@ eviditem.forEach(function(item,index) {
 
         // unlock final discovery
         if (count === 3) {
-            document.getElementById("finaldis").style.display = 
-            "block";
+            document.getElementById("progressbar").style.width = "100%";
+
+            document.getElementById("finaldis").style.display = "block";
 
             document.getElementById("cluemsg").textContent = "ALL AVAILABLE CLUES HAVE BEEN RECOVERED.";
         }
     });    
 });
+
+document.getElementById("finaldis").style.display = "block";
