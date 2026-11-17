@@ -81,3 +81,33 @@ docbtn.forEach(function (button) {
 });
 
 //archive search function
+const searchinput = document.getElementById("archivesearch");
+const searchstats = document.getElementById("sstatus");
+
+searchinput.addEventListener("input",function () {
+
+    const query = searchinput.value.toLowerCase();
+
+    //search through case cards and document records
+    const searchableitmes = document.querySelectorAll(
+        ".casecard, .documentitem"
+    );
+
+    let found = 0;
+
+    searchableitmes.forEach(function (item) {
+
+        const itemtext = item.textContent.toLowerCase();
+
+        if (itemtext.includes(query)) {
+            item.style.display = "";
+            found++;
+        } else {
+            item.style.display="none";
+        }
+    });
+
+    searchstats.textContent = query === ""
+        ? "SEARCH ALL RECOVERED RECORDS"
+        :  found + "RECORDS(S) FOUND";
+});
