@@ -10,29 +10,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/*header layout*/
-header {
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    padding:30px 7%;
-}
-
-header h2 {
-    font-size: 22px;
-    letter-spacing:2px;
-}
-
-header h2 span {
-    color:#888;
-}
-
-header p {
-    color:#888;
-    font-family:monospace;
-    font-size:12px;
-}
-
 /*landinf page content*/
 
 .homepage {
@@ -50,10 +27,6 @@ header p {
     gap:50px;
 }
 
-.herocontent {
-    flex:1;
-    max-width:600px;
-}
 
 .eye {
     color: gray;
@@ -64,17 +37,10 @@ header p {
 }
 
 h1{
-    font-size: clamp(50px,7vw,90px);
+    font-size: 100px;
     letter-spacing: -4px;
     line-height: 1;
-}
-
-.desc {
-    color:gray;
-    font-size: 15px;
-    line-height:2;
-    max-width:350px;
-    margin-top:25px;
+    align-items: center;
 }
 
 
@@ -90,11 +56,6 @@ button {
     cursor:pointer;
 }
 
-button:hover {
-    background:transparent;
-    color:white;
-}
-
 /*cctv*/
 .heroimg {
     flex:1;
@@ -107,6 +68,7 @@ button:hover {
 .heroimg img {
     width:100%;
     height:300px;
+    bottom:20px;
     object-fit: cover;
 }
 
@@ -123,32 +85,19 @@ button:hover {
     color:white;
 }
 
-.recod {
-    color:red;
-}
-
-.camtime {
-    position: absolute;
-    bottom:20px;
-    left:20px;
-    font-family:monospace;
-    font-size:10px;
-    color: whitesmoke;
-}
-
 /*archive dash*/
-.dash {
-    display:none;
+.dashheader {
     width:100%;
     padding:0;
-    min-height: calc(100vh-85px);
-    grid-template-columns: 220px 1fr;
+    grid-template-columns: 1fr;
+    align-items: center;
 }
+
 
 .dashheader h2 {
     font-size:36px;
-    margin: 15px 0;
     letter-spacing:1px;
+
 }
 
 .dashheader > p:last-child {
@@ -183,57 +132,6 @@ button:hover {
     margin-top: 12px;
 }
 
-/*dash sidebar*/
-
-.sidebar {
-    background: #151515;
-    border-right: 1px solid #303030;
-    padding:30px 25px;
-    position: relative;
-}
-
-.sidebar h3 {
-    font-size: 25px;
-    letter-spacing: 3px;
-}
-
-.sidebar h3 span {
-    color: gray;
-}
-
-.sidebarlabel {
-    color:#666;
-    font-family: monospace;
-    font-size: 20px;
-    margin-top: 50px;
-    margin-bottom: 15px;
-}
-
-.sidebar nav {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.sidebar nav a {
-    color:#888;
-    text-decoration: none;
-    padding:12px;
-    font-size:14px;
-}
-
-.sidebar nav a:hover, .sidebar nav a.active {
-    background:#252525;
-    color:white;
-}
-
-.sidebarstatus {
-    position: absolute;
-    bottom: 18px;
-    color:gray;
-    font-family: monospace;
-    font-size:12px;
-}
 
 /*dash content*/
 .dashcontent {
@@ -279,9 +177,6 @@ button:hover {
     transition: border-color 0.2s;
 }
 
-.casecard:hover {
-    border-color:gray;
-}
 
 .casecard p {
     color:gray;
