@@ -5,9 +5,8 @@ The Investigation Place!
 An interactive dark-themed archive having classified case files, recovered evidence, documents, command terminal, hidden clues waiting to be discovered.
 
 ## Screenshots
-<img width="1535" height="717" alt="image" src="https://github.com/user-attachments/assets/59e9e8c6-67a9-4434-a44b-ddc3d0f2c572" />
-<img width="1510" height="708" alt="image" src="https://github.com/user-attachments/assets/ffabb8ba-1fba-4b5a-a6f9-c0c2e39ced46" />
-<img width="1513" height="713" alt="image" src="https://github.com/user-attachments/assets/9e77c76e-3673-4f8c-9264-5c2adee8b80f" />
+<img width="1530" height="720" alt="image" src="https://github.com/user-attachments/assets/fde514f7-18f2-4794-9224-664d9289a10f" />
+<img width="1507" height="693" alt="image" src="https://github.com/user-attachments/assets/b0143684-9e0a-4938-860b-bc0e1bf05c57" />
 
 ## Tech stacks
 - HTML5
